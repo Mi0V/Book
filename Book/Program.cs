@@ -60,8 +60,8 @@ namespace Book
             {
                 using(StreamWriter sw = new StreamWriter(fs, Encoding.Unicode))
                 {
-                    
-                    sw.Write("Все слова:")
+
+                    sw.Write("Все слова:");
 
                 }
             }
@@ -88,7 +88,11 @@ namespace Book
                 
                 List<string> list = new List<string>();
                 list.Add(word);
-                WriteLine($"Все слова - {list}");
+                foreach(string i in list)
+                {
+                    Write
+                }
+                WriteLine($"Все слова - {list}"); // Как Из файла достать занчения?
 
                 Write(" "); //Вывод слова и перевода
             }
@@ -116,9 +120,10 @@ namespace Book
         {
             WriteLine("Введите слово которое хотите удалить?");
             string rusWord = ReadLine();
-            List<string> list = new List<string>                      ///Как можно Значения из файла записать List?
+            List<string> list = new List<string>;                      ///Как можно Значения из файла записать List?
+            foreach
             {
-               
+
             }
 
 
@@ -132,7 +137,7 @@ namespace Book
             Book book = new Book();
             Metods metods = new Metods();
             string filePath = "Book.txt";
-            metods.CreateFile(filePath);
+            //metods.CreateFile(filePath);
             metods.AddWord();
             metods.ReadWord(filePath);
             metods.Search();
